@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>899</width>
+    <height>785</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Cadastrar Pacientes</string>
+  </property>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>901</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 255);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="text_hospital">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>20</y>
+      <width>581</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>26</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;HOSPITAL JOÃO AMOÊDO&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_segun">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>80</y>
+      <width>511</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;SALVANDO VIDAS À 20 ANOS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_logo">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>0</y>
+      <width>131</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>img/LOGO.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>150</y>
+     <width>901</width>
+     <height>631</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame{
+	background-color: rgb(227, 227, 227);
+}
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QCheckBox" name="checkBox_viuvo">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>531</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Viúvo(a)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_cpf">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>221</y>
+      <width>201</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_nome">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>121</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Sans Serif</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;Nome:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>531</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Fechar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_nacionalidade">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>271</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Sans Serif</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Nacionalidade</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_tipo_san">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>271</y>
+      <width>161</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Sans Serif</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Tipo Sanguíneo:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_rg">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>221</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>RG:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_n_conju">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>411</y>
+      <width>651</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_cpf">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>221</y>
+      <width>51</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>CPF:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_nacionalidade">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>271</y>
+      <width>281</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_cadaspaci">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>51</y>
+      <width>271</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#000000;&quot;&gt;CADASTRAR PACIENTE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>531</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Cadastrar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_estadocivil">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>451</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Sans Serif</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Estado Civil:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_datanasc">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>221</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Sans Serif</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Data de Nasc.:</string>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="dateEdit_data">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>221</y>
+      <width>161</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_endereco">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>171</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Sans Serif</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Endereço:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_n_pai">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>361</y>
+      <width>681</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_tipo_sang">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>271</y>
+      <width>181</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_rg">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>221</y>
+      <width>171</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_casado">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>491</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Casado(a)</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_solteiro">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>491</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Solteiro(a)</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_endereco">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>171</y>
+      <width>561</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_n_mae">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>321</y>
+      <width>681</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_nome">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>121</y>
+      <width>601</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_n_conju">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>411</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Sans Serif</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>N. do Cônjuge:</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_divorciado">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>531</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Divorciado(a)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_n_pai">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>361</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Sans Serif</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>N. do Pai:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_n_mae">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>320</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Sans Serif</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>N. da Mãe:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="img_paciente">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>191</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>img/paciente.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <zorder>checkBox_viuvo</zorder>
+   <zorder>lineEdit_cpf</zorder>
+   <zorder>pushButton</zorder>
+   <zorder>text_nacionalidade</zorder>
+   <zorder>text_tipo_san</zorder>
+   <zorder>text_rg</zorder>
+   <zorder>lineEdit_n_conju</zorder>
+   <zorder>text_cpf</zorder>
+   <zorder>lineEdit_nacionalidade</zorder>
+   <zorder>text_cadaspaci</zorder>
+   <zorder>pushButton_2</zorder>
+   <zorder>text_estadocivil</zorder>
+   <zorder>text_datanasc</zorder>
+   <zorder>dateEdit_data</zorder>
+   <zorder>lineEdit_n_pai</zorder>
+   <zorder>lineEdit_tipo_sang</zorder>
+   <zorder>lineEdit_rg</zorder>
+   <zorder>checkBox_casado</zorder>
+   <zorder>checkBox_solteiro</zorder>
+   <zorder>lineEdit_endereco</zorder>
+   <zorder>lineEdit_n_mae</zorder>
+   <zorder>lineEdit_nome</zorder>
+   <zorder>text_n_conju</zorder>
+   <zorder>checkBox_divorciado</zorder>
+   <zorder>text_n_pai</zorder>
+   <zorder>text_n_mae</zorder>
+   <zorder>img_paciente</zorder>
+   <zorder>text_nome</zorder>
+   <zorder>text_endereco</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

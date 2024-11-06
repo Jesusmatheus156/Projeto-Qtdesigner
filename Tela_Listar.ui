@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>874</width>
+    <height>684</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Tela Listar</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>881</width>
+      <height>691</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 0, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="geometry">
+      <rect>
+       <x>-10</x>
+       <y>200</y>
+       <width>891</width>
+       <height>561</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+font: 10pt &quot;MS Reference Sans Serif&quot;;</string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab_listar_pacientes">
+      <attribute name="title">
+       <string>Listar Pacientes</string>
+      </attribute>
+      <widget class="QWidget" name="widget_lisatr_pacientes" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>-10</y>
+         <width>901</width>
+         <height>551</height>
+        </rect>
+       </property>
+       <widget class="QTableWidget" name="tableWidget_listarpaciente">
+        <property name="geometry">
+         <rect>
+          <x>-10</x>
+          <y>10</y>
+          <width>891</width>
+          <height>461</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(67, 217, 231);</string>
+        </property>
+        <column>
+         <property name="text">
+          <string>  Nome</string>
+         </property>
+         <property name="textAlignment">
+          <set>AlignCenter</set>
+         </property>
+         <property name="background">
+          <color>
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>CPF</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>RG</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Data Nasc.</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Estado Civil</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>N. Mãe</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>N. Pai</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Tipo Sang.</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Nacionalidade</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string/>
+         </property>
+        </column>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_lisatr_cirurgia">
+      <attribute name="title">
+       <string>Listar Cirurgias</string>
+      </attribute>
+      <widget class="QWidget" name="widget_listar_cirurgia" native="true">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>-20</y>
+         <width>911</width>
+         <height>581</height>
+        </rect>
+       </property>
+       <widget class="QTableWidget" name="tableWidget_listarcirurgia">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>20</y>
+          <width>891</width>
+          <height>451</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(67, 217, 231);</string>
+        </property>
+        <column>
+         <property name="text">
+          <string>Nome</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>CPF</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Data</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>N. Médico</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>T. Cirurgia</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Horário</string>
+         </property>
+        </column>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tablisatr_consultas">
+      <attribute name="title">
+       <string>Listar Consultas</string>
+      </attribute>
+      <widget class="QWidget" name="widget_lisatr_consultas" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>901</width>
+         <height>541</height>
+        </rect>
+       </property>
+       <widget class="QTableWidget" name="tableWidget_lisatrconsultar">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>881</width>
+          <height>451</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(67, 217, 231);</string>
+        </property>
+        <column>
+         <property name="text">
+          <string>Nome</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Cpf</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Data</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Horário</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>N. Médico</string>
+         </property>
+        </column>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>871</width>
+       <height>201</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(67, 217, 231);
+background-color: rgb(0, 0, 255);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="texto_hospital">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>40</y>
+        <width>581</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>26</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;HOSPITAL JOÃO AMOÊDO&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="text_segun_2">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>100</y>
+        <width>511</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>20</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;SALVANDO VIDAS À 20 ANOS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="img_logo">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>0</y>
+        <width>171</width>
+        <height>171</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../../Downloads/LOGO.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
